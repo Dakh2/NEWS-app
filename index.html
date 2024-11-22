@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>News App</h1>
+        <div class="filters">
+            <input type="text" id="search-bar" placeholder="Search news...">
+            <button id="search-btn">Search</button>
+            <select id="country-filter">
+                <option value="us">USA</option>
+                <option value="gb">UK</option>
+                <option value="in">India</option>
+                <!-- Add more countries here -->
+            </select>
+            <select id="category-filter">
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div id="news-container"></div>
+        <div id="pagination">
+            <button id="prev-btn">Previous</button>
+            <div id="page-numbers"></div>
+            <button id="next-btn">Next</button>
+        </div>
+        
+        
+    </main>
+
+    <footer>
+       <p>&copy;  NEWS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

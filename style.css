@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdcbcb;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.filters {
+    margin-top: 10px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+#search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+#news-container {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.news-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    margin: 0 0 10px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#pagination button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-number {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.page-number.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-number:hover:not(.active) {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
